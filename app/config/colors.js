@@ -4,5 +4,6 @@ export default {
     secondary: '#4ecdc4',
     secondaryDark: '#4bbdb5',
     black: '#000',
-    white: '#fff'
+    white: '#fff',
+    medium: '#6e6969'
 }
