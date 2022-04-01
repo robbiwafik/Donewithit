@@ -1,6 +1,7 @@
 import colors from '../config/colors';
 import {StyleSheet, View, Image} from 'react-native';
 import AppText from '../components/AppText';
+import MediaObject from '../components/MediaObject';
 
 
 function ListingItemScreen({ image, title, price }) {
@@ -10,6 +11,7 @@ function ListingItemScreen({ image, title, price }) {
             <View style={styles.details}>
                 <AppText style={styles.title}>{title}</AppText>
                 <AppText style={styles.price}>{price}</AppText>
+                <MediaObject title={'Mosh Hamedani'} subTitle={'5 Listings'} image={require('../assets/mosh.jpg')} />
             </View>
         </View>
     );
@@ -34,7 +36,8 @@ const styles = StyleSheet.create({
     price: {
         color: colors.secondary,
         fontWeight: 'bold',
-        fontSize: 16
+        fontSize: 16,
+        marginBottom: 40
     }
 });
 
