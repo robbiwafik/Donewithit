@@ -3,9 +3,9 @@ import AppText from './AppText';
 import colors from '../config/colors';
 
 
-function Button({ title, color, colorHighlight, isPressed, onPress }) {
+function Button({ title, color, underlayColor, onPress }) {
     return (
-        <TouchableHighlight activeOpacity={0.5} style={[styles.button, { backgroundColor: isPressed ? color : colorHighlight}]} onPress={onPress}>
+        <TouchableHighlight activeOpacity={1} style={[styles.button, { backgroundColor: color }]} onPress={onPress} underlayColor={underlayColor} >
             <AppText style={styles.text}>{ title }</AppText>
         </TouchableHighlight>
     );
